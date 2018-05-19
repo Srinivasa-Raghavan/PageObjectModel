@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="47294" started-at="2018-03-17T17:23:12Z" finished-at="2018-03-17T17:24:00Z">
+  <suite name="Default suite" duration-ms="38507" started-at="2018-05-19T05:08:21Z" finished-at="2018-05-19T05:09:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="47294" started-at="2018-03-17T17:23:12Z" finished-at="2018-03-17T17:24:00Z">
-      <class name="testcases.TC003_CreateLead">
-        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases.TC003_CreateLead@12108b5]" name="beforeSuite" is-config="true" duration-ms="2903" started-at="2018-03-17T22:53:09Z" finished-at="2018-03-17T22:53:12Z">
+    <test name="Default test" duration-ms="38507" started-at="2018-05-19T05:08:21Z" finished-at="2018-05-19T05:09:00Z">
+      <class name="testcases.TC001_LoginAndLogout">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases.TC001_LoginAndLogout@100d6b1]" name="beforeSuite" is-config="true" duration-ms="1547" started-at="2018-05-19T10:38:20Z" finished-at="2018-05-19T10:38:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.TC003_CreateLead@12108b5]" name="setData" is-config="true" duration-ms="1" started-at="2018-03-17T22:53:12Z" finished-at="2018-03-17T22:53:12Z">
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.TC001_LoginAndLogout@100d6b1]" name="setData" is-config="true" duration-ms="0" started-at="2018-05-19T10:38:21Z" finished-at="2018-05-19T10:38:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setData -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases.TC003_CreateLead@12108b5]" name="beforeClass" is-config="true" duration-ms="3" started-at="2018-03-17T22:53:12Z" finished-at="2018-03-17T22:53:12Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:testcases.TC001_LoginAndLogout@100d6b1]" name="beforeClass" is-config="true" duration-ms="2" started-at="2018-05-19T10:38:21Z" finished-at="2018-05-19T10:38:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC003_CreateLead@12108b5]" name="beforeMethod" is-config="true" duration-ms="20055" started-at="2018-03-17T22:53:18Z" finished-at="2018-03-17T22:53:38Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC001_LoginAndLogout@100d6b1]" name="beforeMethod" is-config="true" duration-ms="15914" started-at="2018-05-19T10:38:24Z" finished-at="2018-05-19T10:38:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="createLead(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003_CreateLead@12108b5]" name="createLead" duration-ms="1318" started-at="2018-03-17T22:53:38Z" data-provider="fetchData" finished-at="2018-03-17T22:53:39Z">
+        <test-method status="PASS" signature="loginAndLogout(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC001_LoginAndLogout@100d6b1]" name="loginAndLogout" duration-ms="5654" started-at="2018-05-19T10:38:39Z" data-provider="fetchData" finished-at="2018-05-19T10:38:45Z">
           <params>
             <param index="0">
               <value>
@@ -37,82 +37,26 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Huawei]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Srinivasa Raghavan]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Thirumalai Sri Varadhan]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Automobile]]>
+                <![CDATA[Demo Sales Manager]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.RuntimeException">
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-	at utils.Reporter.reportStep(Reporter.java:61)
-	at utils.Reporter.reportStep(Reporter.java:71)
-	at wdMethods.SeMethods.type(SeMethods.java:122)
-	at pages.LoginPage.enterUserName(LoginPage.java:22)
-	at testcases.TC003_CreateLead.createLead(TC003_CreateLead.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createLead -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.TC003_CreateLead@12108b5]" name="afterMethod" is-config="true" duration-ms="1218" started-at="2018-03-17T22:53:39Z" finished-at="2018-03-17T22:53:40Z">
+        </test-method> <!-- loginAndLogout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.TC001_LoginAndLogout@100d6b1]" name="afterMethod" is-config="true" duration-ms="943" started-at="2018-05-19T10:38:45Z" finished-at="2018-05-19T10:38:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC003_CreateLead@12108b5]" name="beforeMethod" is-config="true" duration-ms="16381" started-at="2018-03-17T22:53:40Z" finished-at="2018-03-17T22:53:57Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC001_LoginAndLogout@100d6b1]" name="beforeMethod" is-config="true" duration-ms="7715" started-at="2018-05-19T10:38:46Z" finished-at="2018-05-19T10:38:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="FAIL" signature="createLead(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC003_CreateLead@12108b5]" name="createLead" duration-ms="1414" started-at="2018-03-17T22:53:57Z" data-provider="fetchData" finished-at="2018-03-17T22:53:58Z">
+        <test-method status="PASS" signature="loginAndLogout(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC001_LoginAndLogout@100d6b1]" name="loginAndLogout" duration-ms="5053" started-at="2018-05-19T10:38:54Z" data-provider="fetchData" finished-at="2018-05-19T10:38:59Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[DemoSalesManager]]>
+                <![CDATA[DemoCSR]]>
               </value>
             </param>
             <param index="1">
@@ -122,82 +66,26 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Cognizant]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Girisudha]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Chandrasekhar]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Automobile]]>
+                <![CDATA[Demo B2B CSR]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.RuntimeException">
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-	at utils.Reporter.reportStep(Reporter.java:61)
-	at utils.Reporter.reportStep(Reporter.java:71)
-	at wdMethods.SeMethods.type(SeMethods.java:122)
-	at pages.LoginPage.enterUserName(LoginPage.java:22)
-	at testcases.TC003_CreateLead.createLead(TC003_CreateLead.java:27)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createLead -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.TC003_CreateLead@12108b5]" name="afterMethod" is-config="true" duration-ms="1310" started-at="2018-03-17T22:53:58Z" finished-at="2018-03-17T22:54:00Z">
+        </test-method> <!-- loginAndLogout -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.TC001_LoginAndLogout@100d6b1]" name="afterMethod" is-config="true" duration-ms="907" started-at="2018-05-19T10:38:59Z" finished-at="2018-05-19T10:39:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.TC003_CreateLead@12108b5]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-03-17T22:54:00Z" finished-at="2018-03-17T22:54:00Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.TC001_LoginAndLogout@100d6b1]" name="afterTest" is-config="true" duration-ms="0" started-at="2018-05-19T10:39:00Z" finished-at="2018-05-19T10:39:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases.TC003_CreateLead@12108b5]" name="afterSuite" is-config="true" duration-ms="2174" started-at="2018-03-17T22:54:00Z" finished-at="2018-03-17T22:54:02Z">
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases.TC001_LoginAndLogout@100d6b1]" name="afterSuite" is-config="true" duration-ms="1034" started-at="2018-05-19T10:39:00Z" finished-at="2018-05-19T10:39:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- testcases.TC003_CreateLead -->
+      </class> <!-- testcases.TC001_LoginAndLogout -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
